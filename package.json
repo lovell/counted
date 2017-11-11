@@ -1,0 +1,23 @@
+{
+  "name": "release-stats",
+  "version": "0.0.1",
+  "description": "Track download statistics for Github Releases",
+  "private": true,
+  "scripts": {
+    "test": "semistandard"
+  },
+  "author": "Lovell Fuller <npm@lovell.info>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "deepmerge": "^2.0.1",
+    "ghreleases": "^1.0.6",
+    "jsonist": "^1.3.0",
+    "octonode": "^0.9.1"
+  },
+  "devDependencies": {
+    "semistandard": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
