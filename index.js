@@ -40,7 +40,7 @@ list({ token: GITHUB_AUTH_TOKEN }, GITHUB_OWNER, GITHUB_REPO, async (err, releas
         repo().contents(filename, REPO_BRANCH, (err, data) => {
           if (err) {
             if (err.statusCode === 404) {
-              updateStats(filename, latestStats, data.sha, resolve);
+              updateStats(filename, latestStats, undefined, resolve);
             } else {
               error(err);
             }
