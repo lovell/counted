@@ -19,7 +19,7 @@
     "REPO_DIRECTORY": {
       "description": "Directory to use to store data",
       "value": "counted"
-    }
+    },
     "COMMITTER_NAME": {
       "description": "Git 'user.name' for this task to commit as",
       "value": "counted"
@@ -37,10 +37,12 @@
   "addons": [
     "scheduler"
   ],
-  "formation": {
-    "web": {
-      "quantity": 0,
-      "size": "free"
+  "formation": [
+    {
+      "web": {
+        "quantity": 0,
+        "size": "free"
+      }
     }
-  }
+  ]
 }
