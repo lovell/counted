@@ -1,0 +1,46 @@
+{
+  "name": "counted",
+  "description": "Scheduled task to capture and store download_count values for assets distributed via Github Releases",
+  "repository": "https://github.com/lovell/counted",
+  "env": {
+    "GITHUB_OWNER": {
+      "description": "GitHub username that owns the repository, e.g. 'lovell'"
+    },
+    "GITHUB_REPO": {
+      "description": "Name of the repository, e.g. 'counted'"
+    },
+    "GITHUB_AUTH_TOKEN": {
+      "description": "GitHub Personal Access Token granted 'public_repo' scope access to the repository"
+    },
+    "REPO_BRANCH": {
+      "description": "Git branch to use for commits",
+      "value": "counted"
+    },
+    "REPO_DIRECTORY": {
+      "description": "Directory to use to store data",
+      "value": "counted"
+    }
+    "COMMITTER_NAME": {
+      "description": "Git 'user.name' for this task to commit as",
+      "value": "counted"
+    },
+    "COMMITTER_EMAIL": {
+      "description": "Git 'user.email' for this task to commit as",
+      "value": "counted@users.noreply.github.com"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "addons": [
+    "scheduler"
+  ],
+  "formation": {
+    "web": {
+      "quantity": 0,
+      "size": "free"
+    }
+  }
+}
