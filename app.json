@@ -1,6 +1,6 @@
 {
   "name": "counted",
-  "description": "Scheduled task to capture and store download_count values for assets distributed via Github Releases",
+  "description": "Use Heroku Scheduler to capture and store download_count values for assets distributed via Github Releases",
   "repository": "https://github.com/lovell/counted",
   "env": {
     "GITHUB_OWNER": {
@@ -39,10 +39,9 @@
   ],
   "formation": [
     {
-      "web": {
-        "quantity": 0,
-        "size": "free"
-      }
+      "process": "worker",
+      "quantity": 0,
+      "size": "free"
     }
   ]
 }
