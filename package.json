@@ -15,7 +15,7 @@
   "dependencies": {
     "deepmerge": "^2.0.1",
     "ghreleases": "^1.0.7",
-    "jsonist": "^1.3.0",
+    "jsonist": "^2.1.0",
     "octonode": "^0.9.1"
   },
   "devDependencies": {

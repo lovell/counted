@@ -6,13 +6,13 @@ const { client } = require('octonode');
 const timestamp = new Date().toISOString().substr(0, 19) + 'Z';
 
 const {
-  COMMITTER_NAME = 'Release Stats Bot',
-  COMMITTER_EMAIL = 'release-stats-bot@users.noreply.github.com',
+  COMMITTER_NAME = 'counted',
+  COMMITTER_EMAIL = 'counted@users.noreply.github.com',
   GITHUB_AUTH_TOKEN,
   GITHUB_OWNER,
   GITHUB_REPO,
-  REPO_BRANCH = 'release-stats',
-  REPO_DIRECTORY = 'release-stats'
+  REPO_BRANCH = 'counted',
+  REPO_DIRECTORY = 'counted'
 } = process.env;
 
 const error = err => {
