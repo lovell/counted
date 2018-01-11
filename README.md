@@ -1,6 +1,8 @@
 # counted
 
-The missing analytics feature for GitHub Releases.
+Capture, store and track `download_count` values for assets distributed via Github Releases
+
+Think of it as the missing analytics feature for GitHub Releases.
 
 ## Why?
 
@@ -10,8 +12,10 @@ of the `download_count` property for each asset.
 ## What?
 
 This repository contains a script to fetch the `download_count` value
-for all release assets in a given repository and store that data
-in a number of per-release JSON files in that same repository.
+for all release assets in a given GitHub repository and store that data
+in a number of per-release JSON files in that same GitHub repository.
+
+No need for a separate data store.
 
 By default it will store these files in its own `counted` directory on a `counted` branch.
 
