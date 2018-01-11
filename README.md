@@ -38,7 +38,7 @@ In this example `1234567` is the release `id` and `7654321` is the asset `id`.
 This script can be run at *any* desired frequency, typically daily.
 The more often it is run, the more accurate data interpolation can be.
 
-# How?
+## How?
 
 First you'll need to create a `counted` branch on your repository.
 
@@ -68,12 +68,12 @@ Then Heroku Scheduler can be used to run this script for free.
     * Next due: 00:00
 9. Click `Save`.
 
-# TODO
+## TODO
 
 * Interpolation of timestamped `download_count` values
 * Pretty reports
 
-# Licence
+## Licence
 
 Copyright 2018 Lovell Fuller.
 
